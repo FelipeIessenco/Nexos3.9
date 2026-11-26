@@ -1,0 +1,147 @@
+body {
+    background-color: #f3efd1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #9bb3a2;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 10px 32px;
+    background: #1f6b3a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.banner-nex {
+    height: 70px;
+    width: 200;
+}
+.brand-logo {
+    height: 56px;
+    width: auto;
+}
+
+.brand-name strong {
+    color: #f5a623;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu a {
+    padding: 10px 16px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background .2s;
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, .15);
+}
+
+.menu a.active {
+    background: #f5a623;
+    color: #1b1b1b;
+}
+
+.login-page {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    padding: 24px;
+    background: #9bb3a2;
+}
+
+.login-container {
+    width: min(100%, 400px);
+    padding: 32px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .16);
+}
+
+.login-container h1 {
+    margin: 0;
+    color: #1f6b3a;
+    text-align: center;
+}
+
+.login-container h1 strong {
+    color: #f5a623;
+}
+
+.descricao,
+.login-aviso {
+    text-align: center;
+}
+
+.login-aviso {
+    color: #555;
+    font-size: .9rem;
+}
+
+.login-container form {
+    display: grid;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aeb8b0;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.login-container button {
+    margin-top: 8px;
+    padding: 12px;
+    border: 0;
+    border-radius: 6px;
+    background: #1f6b3a;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+}
+
+.login-container button:hover {
+    background: #18552e;
+}
+
+/* celular */
+@media (max-width: 700px) {
+    .topbar {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
