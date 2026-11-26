@@ -133,6 +133,13 @@ body {
     background: #18552e;
 }
 
+.banners{
+    border-radius: 4%;
+    background-color: #eaf5e0;
+    width: 400px;
+    height: auto;
+    
+}
 /* celular */
 @media (max-width: 700px) {
     .topbar {
